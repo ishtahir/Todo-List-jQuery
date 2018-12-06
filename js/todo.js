@@ -1,10 +1,10 @@
 // clear todos when they are clicked
-$('li').click(function() {
+$('ul').on('click', 'li', function() {
     $(this).toggleClass('clear');
 });
 
 // delete todos when the 'X' is clicked
-$('.trash').click(function(event) {
+$('ul').on('click', 'span', function(event) {
     $(this).parent().fadeOut(500, function() {
         $(this).remove();
     });
