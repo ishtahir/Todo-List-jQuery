@@ -17,7 +17,7 @@ $('input[type="text"]').keyup(function(event) {
     if (event.keyCode === 13) {
         const value = $(this).val();
         let text = '';
-        text += `<li><span class="trash">X</span> ${value}</li>`;
+        text += `<li><span><i class="fa fa-trash"></i></span>${value}</li>`;
         $('.todo-list-items').append(text);
         $(this).val('');
     }
