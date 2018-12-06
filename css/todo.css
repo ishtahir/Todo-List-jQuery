@@ -1,6 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(to right, #c0392b, #8e44ad);
+    background: linear-gradient(to right, #1c92d2, #f2fcfe);
 }
 
 h1 {
@@ -17,7 +17,7 @@ input {
     font-size: 18px;
     background-color: #f7f7f7;
     width: 100%;
-    border: none;
+    border: 3px solid rgba(0, 0, 0, 0);
     padding: 13px 13px 13px 20px;
     box-sizing: border-box;
     color: #2980b9;
@@ -35,14 +35,31 @@ ul {
     padding: 0;
 }
 
-li:nth-child(odd) {
-    background-color: #fff;
-}
-
 li {
     height: 40px;
     line-height: 40px;
     color: #666;
+}
+
+li:nth-child(odd) {
+    background-color: #fff;
+}
+
+li:hover span {
+    width: 40px;
+    opacity: 1.0;
+}
+
+span {
+    background-color: #e74c3c;
+    height: 40px;
+    margin-right: 20px;
+    text-align: center;
+    color: #fff;
+    width: 0;
+    display: inline-block;
+    transition: 0.2s linear;
+    opacity: 0;
 }
 
 #container {
