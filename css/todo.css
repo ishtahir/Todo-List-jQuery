@@ -56,3 +56,7 @@ li {
     color: #bbb;
     text-decoration: line-through;
 }
+
+.fa-plus {
+    float: right;
+}
