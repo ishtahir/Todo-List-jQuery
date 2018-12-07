@@ -24,6 +24,6 @@ $('input[type="text"]').keyup(function(event) {
 });
 
 // toggle fade for input when icon is pressed
-$('.fa-plus').click(function() {
+$('.fa-minus').click(function() {
     $('input').fadeToggle();
 })
