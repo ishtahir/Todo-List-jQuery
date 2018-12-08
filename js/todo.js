@@ -12,9 +12,10 @@ $('ul').on('click', 'span', function(event) {
 });
 
 // add the keyup listener for when enter is pressed
-$('input[type="text"]').keyup(function(event) {
+const $input = $('input[type="text"]')
+$input.keyup(function(event) {
     event.preventDefault();
-    if (event.keyCode === 13) {
+    if (event.keyCode === 13 && $input.val()) {
         const value = $(this).val();
         let text = '';
         text += `<li><span><i class="fa fa-trash"></i></span>${value}</li>`;
